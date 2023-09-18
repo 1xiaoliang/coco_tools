@@ -52,6 +52,8 @@ def split_coco(root,json_path,train_radio=0.8,val_radio=0.1998,test_radio=0):
     f.write(json.dumps(test_dic))
     f.close()
 if __name__=="__main__":
+    # 待划分json路径
     json_path="/data2/liangxiaoyuan/patent_layout/use_clean_dataset/checked_json_imgs/general_correct_no_BOX+.json"
+    # 结果保存路径
     root="/data2/liangxiaoyuan/patent_layout/use_clean_dataset/checked_json_imgs"
     split_coco(root,json_path)
